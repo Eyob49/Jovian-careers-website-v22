@@ -1,0 +1,11 @@
+run = "python3 app.py"
+[nix]
+  deps = [
+    pkgs.python3 
+  ]
+  channel = "stable-24_05"
+
+
+
+[deployment]
+run = ["sh", "-c", "python app.py"]
