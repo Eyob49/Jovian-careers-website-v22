@@ -6,9 +6,7 @@
     }
   ],
   "routes": [
-    // This rule ensures all other requests (that aren't static files from 'public')
-    // are routed to your app.py. Vercel's default behavior will handle static files
-    // from 'public' first if they are referenced from the root (e.g., /banner.jpeg).
+    
     {
       "src": "/(.*)",
       "dest": "app.py"
